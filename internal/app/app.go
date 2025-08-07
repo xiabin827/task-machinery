@@ -7,16 +7,16 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/evrone/go-clean-template/config"
-	"github.com/evrone/go-clean-template/internal/controller/http"
-	"github.com/evrone/go-clean-template/internal/repo/persistent"
-	"github.com/evrone/go-clean-template/internal/repo/webapi"
-	"github.com/evrone/go-clean-template/internal/usecase/translation"
-	"github.com/evrone/go-clean-template/pkg/httpserver"
-	"github.com/evrone/go-clean-template/pkg/logger"
-	"github.com/evrone/go-clean-template/pkg/machinery"
-	"github.com/evrone/go-clean-template/pkg/machinery/tasks/oceanengine"
-	"github.com/evrone/go-clean-template/pkg/postgres"
+	"github.com/xiabin827/task-machinery/config"
+	"github.com/xiabin827/task-machinery/internal/controller/http"
+	"github.com/xiabin827/task-machinery/internal/repo/persistent"
+	"github.com/xiabin827/task-machinery/internal/repo/webapi"
+	"github.com/xiabin827/task-machinery/internal/usecase/translation"
+	"github.com/xiabin827/task-machinery/pkg/httpserver"
+	"github.com/xiabin827/task-machinery/pkg/logger"
+	"github.com/xiabin827/task-machinery/pkg/machinery"
+	"github.com/xiabin827/task-machinery/pkg/machinery/tasks/oceanengine"
+	"github.com/xiabin827/task-machinery/pkg/postgres"
 )
 
 // Run creates objects via constructors.

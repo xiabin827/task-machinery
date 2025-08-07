@@ -6,8 +6,8 @@ import (
 	redisbroker "github.com/RichardKnop/machinery/v2/brokers/redis"
 	machinery_config "github.com/RichardKnop/machinery/v2/config"
 	eagerlock "github.com/RichardKnop/machinery/v2/locks/eager"
-	"github.com/evrone/go-clean-template/config"
-	"github.com/evrone/go-clean-template/pkg/machinery/tasks/oceanengine"
+	"github.com/xiabin827/task-machinery/config"
+	"github.com/xiabin827/task-machinery/pkg/machinery/tasks/oceanengine"
 )
 
 type Machinery struct {

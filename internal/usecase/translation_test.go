@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/evrone/go-clean-template/internal/entity"
-	"github.com/evrone/go-clean-template/internal/usecase/translation"
 	"github.com/stretchr/testify/require"
+	"github.com/xiabin827/task-machinery/internal/entity"
+	"github.com/xiabin827/task-machinery/internal/usecase/translation"
 	"go.uber.org/mock/gomock"
 )
 

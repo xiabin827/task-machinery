@@ -1,4 +1,4 @@
-module github.com/evrone/go-clean-template
+module github.com/xiabin827/task-machinery
 
 go 1.24
 

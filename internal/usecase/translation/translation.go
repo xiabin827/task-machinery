@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/evrone/go-clean-template/internal/entity"
-	"github.com/evrone/go-clean-template/internal/repo"
+	"github.com/xiabin827/task-machinery/internal/entity"
+	"github.com/xiabin827/task-machinery/internal/repo"
 )
 
 // UseCase -.

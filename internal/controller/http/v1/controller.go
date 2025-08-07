@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"github.com/evrone/go-clean-template/internal/usecase"
-	"github.com/evrone/go-clean-template/pkg/logger"
 	"github.com/go-playground/validator/v10"
+	"github.com/xiabin827/task-machinery/internal/usecase"
+	"github.com/xiabin827/task-machinery/pkg/logger"
 )
 
 // V1 -.
