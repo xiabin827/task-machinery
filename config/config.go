@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/caarlos0/env/v11"
+	"github.com/joho/godotenv"
 )
 
 type (
@@ -13,10 +14,10 @@ type (
 		HTTP    HTTP
 		Log     Log
 		PG      PG
-		GRPC    GRPC
-		RMQ     RMQ
 		Metrics Metrics
 		Swagger Swagger
+
+		Machinery Machinery
 	}
 
 	// App -.
@@ -42,18 +43,6 @@ type (
 		URL     string `env:"PG_URL,required"`
 	}
 
-	// GRPC -.
-	GRPC struct {
-		Port string `env:"GRPC_PORT,required"`
-	}
-
-	// RMQ -.
-	RMQ struct {
-		ServerExchange string `env:"RMQ_RPC_SERVER,required"`
-		ClientExchange string `env:"RMQ_RPC_CLIENT,required"`
-		URL            string `env:"RMQ_URL,required"`
-	}
-
 	// Metrics -.
 	Metrics struct {
 		Enabled bool `env:"METRICS_ENABLED" envDefault:"true"`
@@ -63,10 +52,23 @@ type (
 	Swagger struct {
 		Enabled bool `env:"SWAGGER_ENABLED" envDefault:"false"`
 	}
+
+	// Machinery -.
+	Machinery struct {
+		RedisHost     string `env:"MACHINERY_REDIS_HOST,required"`
+		RedisPort     string `env:"MACHINERY_REDIS_PORT,required"`
+		RedisPassword string `env:"MACHINERY_REDIS_PASSWORD,required"`
+		RedisDB       int    `env:"MACHINERY_REDIS_DB,required"`
+		RedisKey      string `env:"MACHINERY_REDIS_KEY,required"`
+		DefaultQueue  string `env:"MACHINERY_DEFAULT_QUEUE,required"`
+	}
 )
 
 // NewConfig returns app config.
 func NewConfig() (*Config, error) {
+
+	_ = godotenv.Load(".env")
+
 	cfg := &Config{}
 	if err := env.Parse(cfg); err != nil {
 		return nil, fmt.Errorf("config error: %w", err)
