@@ -29,7 +29,7 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/oceanengine/ad_open_sdk_go v1.1.64
 	github.com/rs/zerolog v1.34.0
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.0
 	github.com/swaggo/swag v1.16.5
 	go.uber.org/mock v0.5.2
 )
