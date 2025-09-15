@@ -27,7 +27,7 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.18.3
 	github.com/jackc/pgx/v5 v5.7.5
 	github.com/joho/godotenv v1.3.0
-	github.com/oceanengine/ad_open_sdk_go v1.1.64
+	github.com/oceanengine/ad_open_sdk_go v1.1.70
 	github.com/rs/zerolog v1.34.0
 	github.com/stretchr/testify v1.10.0
 	github.com/swaggo/swag v1.16.5
